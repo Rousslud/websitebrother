@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="./css/bootstrap.css"/>
+		<link rel="stylesheet" href="./css/style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> 
+		<script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script>
+		<script type="application/javascript" src="./js/bootstrap.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> My Portfolio - François ROUSSELOT</title>
+		<meta name="author" content="Ludovic ROUSSELOT">
+		<meta name="contactname" content="Ludovic Rousselot Webmaster">
+		<meta name="description" content="Portfolio de François ROUSSELOT"/> 
+		<meta name="keywords" content="Portfolio de François ROUSSELOT">
+		<meta name="subject" content="Portfolio de François ROUSSELOT musique composition chef orchestre compositeur">
+		<meta name="date-creation-ddmmyyyy" content="01112017">
+		<meta name="date-revision-ddmmyyyy" content="20112017">
+	</head>
+		
+	<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Ceci est la page de direction de ton site !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+	<body>
+		<!-- ********************************************* Fond bleu avec titre ********************************************* -->
+		<div class="top">
+				<!--<h1><strong>François Rousselot</strong></h1>
+				<h2>Compositeur - Arrangeur - Chef d'orchestre</h2>-->
+		</div>
+
+
+
+		<!-- ********************************************* Barre de navigation / Menu ********************************************* -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button data-target="#menu1" 
+							class="navbar-toggle"
+							data-toggle="collapse">Menu
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="menu1" >
+					<ul class="nav navbar-nav navbar-center">
+						<!-- Si tu veux rajouter des pages sur ton site, il ne faut pas oublier d inserer les liens dans ce menu. Ne pas oublier non plus de copier
+						la totalité de ce code d'ici  -->
+						<li><a href="./index.html" >ACCUEIL</a></li>
+						<li><a href="./biographie.html">BIOGRAPHIE</a></li>
+						<li class="active"><a href="./direction.html">DIRECTION</a></li>
+						<li><a href="./ecouter.html">ECOUTER</a></li>			
+						<li><a href="./voir.html"> VOIR</a></li>	
+						<li><a href="./catalogue.html"> CATALOGUE</a></li>	
+						<li><a href="./discographie.html"> DISCOGRAPHIE</a></li>
+						<li><a href="./contact.html"> CONTACT</a></li>
+						<!-- à ici sur chacune de tes pages de ton site -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+	<!-- ********************************************* Direction d'orchestre ********************************************* -->
+		<div class="container" id="direction">
+			<h1>Direction d'orchestre </h1>
+			<div class="row">
+				<div class="col-xs-12">
+					<p>En plus de dix années d'activité j'ai eu la chance de diriger de nombreux ensembles (amateurs et professionnels).</p>
+					<p>Vous pouvez découvrir mon travail de direction d'orchestre. Je peux intervenir en tant que chef invité. </p>
+					<p>Si vous souhaitez enregistrer un Cd, organiser un concert, ou toute autre aventure, n'hésitez pas à me <a href="./contact.html">contacter</a> afin de donner vie ensemble à votre aventure. </p>   
+					<br/> 
+					<br/>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 text-center">
+					<a href="./discographie.html">DISCOGRAPHIE</a>
+				</div>
+				<div class="col-sm-3 text-center">
+					<a href="./catalogue.html">REFERENCES <br/>(Projets enregistrés)</a>
+				</div>
+				<div class="col-sm-3 text-center">
+					<a href="./repertoire.html">REPERTOIRE ABORDE</a>
+				</div>
+				<div class="col-sm-3 text-center">
+					<a href="./votreprojet.html">VOTRE PROJET</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- ********************************************* Carousel de photos ********************************************* -->
+		<!-- C'est a dire le visionneur de photos -->
+		<div class="container">
+			<br/>
+			<br/>
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- 
+					Si tu rajoutes des photos . tu copies colles cette ligne <li data-target="#carousel-example-generic" data-slide-to="XXXX"></li>
+				et tu remplaces XXXX par un entier qui incremente le dernier présent
+				Si tu supprimes: tu supprimes une ligne entiére et toujours celle avec le numéro le plus élevé
+				Ne jamais supprimer <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				-->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+				</ol>
+				
+				<!-- 
+					Si tu rajoutes des photos: tu copies colles ces lignes avant le </div> 				
+					<div class="item">
+						<img src="pics/Accueil/nomdetaphoto.extensiondufichier">
+					</div>
+					N'oublie pas de remplacer le nomdetaphoto et extensiondufichier. 
+					Si tu supprimes: il faut chercher par rapport à quelle image tu veux supprimer. 
+					Dans tous les cas, tu dois toujours avoir le premier <div class= de la liste qui est <div class="item active">
+					title = c'est le texte qui s'affiche lorsque tu laisses la souris sur une image 
+					h1 = c'est le gros titre de l'image
+					<p> c'est le petit descriptif en dessous
+				-->
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="pics/Direction/FourviereJanvier2013.jpg" alt="Fourviere Janvier 2013" title="Fourviere Janvier 2013">
+					</div>
+					<div class="item">
+						<img src="pics/Direction/FourviereNovembre2013.jpg" alt="Fourviere Novembre 2013" title="Fourviere Novembre 2013">
+					</div>
+					<div class="item">
+						<img src="pics/Direction/Bratislava.jpg" alt="Bratislava" title="Bratislava">
+					</div>
+					<div class="item">
+						<img src="pics/Direction/Skopje-Symphonie2.jpg" alt="Skopje" title="Skopje" >
+					</div>
+					<div class="item">
+						<img src="pics/Direction/CNSMD.jpg" alt="CNSMD" title="CNSMD">
+					</div>
+					<div class="item">
+						<img src="pics/Direction/Budapest2013.png" alt="Budapest 2013" title="Budapest 2013">
+					</div>
+				</div>
+				
+				<!-- 
+					Controle du Carousel: ne pas y toucher
+				-->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+					</a>
+			</div>	
+		</div>
+		<br/>
+		<br/>
+	</body>
+</html>

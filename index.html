@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="./css/bootstrap.css"/> 
+		<link rel="stylesheet" href="./css/style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> 
+		<script type="application/javascript" src="./js/jquery-2.1.1.min.js"></script> 
+		<script type="application/javascript" src="./js/bootstrap.js"></script> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> My Portfolio - François ROUSSELOT</title>
+		<meta name="author" content="Ludovic ROUSSELOT">
+		<meta name="contactname" content="Ludovic Rousselot Webmaster">
+		<meta name="description" content="Portfolio de François ROUSSELOT"/> 
+		<meta name="keywords" content="Portfolio de François ROUSSELOT">
+		<meta name="subject" content="Portfolio de François ROUSSELOT musique composition chef orchestre compositeur">
+		<meta name="date-creation-ddmmyyyy" content="01112017">
+		<meta name="date-revision-ddmmyyyy" content="20112017">
+
+		
+		<!-- ********************************************ZONE DE COMMENTAIRES******************************************** -->
+		<!-- 
+			Webmaster : Ludovic Rousselot 
+		1. Refonte totale du site: http://francoisrousselot.fr/ qui a été fait par un générateur de HTML
+		2. Passage en Bootstrap pour optimisation de l affichage du contenu en fonction de la résolution de 
+		l'écran de l'utilisateur 
+		3. Index est la page principale, la page d'accueil
+		4. Les informations sont organisées de la maniere suivante: 
+		Des sous-dossiers: 
+			a. CSS : fichier qui permet la belle mise en page du site. Ne toucher qu'au fichier style.css
+			b. fonts : fichiers fonts pour certaines écritures spéciales du site. Si tu veux les changer, les prendre
+			sur https://fonts.google.com/ (seulement celles qui sont gratuies) et les dezipper dans ce dossier
+			c. js : ne pas toucher, c'est du javascript 
+			d. pics : toutes les images du site. Je les ai classées dans des sous-dossiers qui rappelent la page sur laquelle elles sont
+			e. logo : tous les logos du site. Je les ai classés dans des sous-dossiers qui rappelent la page sur laquelle ils sont
+			f. pdf : contient ton cv en pdf
+		Dans le dossier racine: 
+			g. Les différentes pages du site (biographie, catalogue, discographie, ...)
+		-->
+
+
+
+	</head>
+	
+<!-- !!!!!!!!!!!!! Ceci est la page d'accueil de ton site, celle sur laquelle on arrive quand on tape ton URL !!!!!!!!!!!!!!!!!!!!! -->
+
+	<body>
+		<!-- ********************************************* Fond bleu avec titre ********************************************* -->
+		<div class="top">
+				<!--<h1><strong>François Rousselot</strong></h1>
+				<h2>Compositeur - Arrangeur - Chef d'orchestre</h2>-->
+		</div>
+
+		<!-- ********************************************* Barre de navigation / Menu ********************************************* -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="nav-header">
+					<button data-target="#menu1" 
+							class="navbar-toggle"
+							data-toggle="collapse">Menu
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="menu1" >
+					<ul class="nav navbar-nav navbar-center">
+						<!-- Si tu veux rajouter des pages sur ton site, il ne faut pas oublier d inserer les liens dans ce menu. Ne pas oublier non plus de copier
+						la totalité de ce code d'ici  -->
+						<li class="active"><a href="./index.html" >ACCUEIL</a></li>
+						<li><a href="./biographie.html">BIOGRAPHIE</a></li>
+						<li><a href="./direction.html">DIRECTION</a></li>
+						<li><a href="./ecouter.html">ECOUTER</a></li>			
+						<li><a href="./voir.html"> VOIR</a></li>	
+						<li><a href="./catalogue.html"> CATALOGUE</a></li>	
+						<li><a href="./discographie.html"> DISCOGRAPHIE</a></li>
+						<li><a href="./contact.html"> CONTACT</a></li>
+						<!-- à ici sur chacune de tes pages de ton site -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- ********************************************* Carousel de photos ********************************************* -->
+		<!-- C'est a dire le visionneur de photos -->
+
+		<div class="container">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- 
+					Si tu rajoutes des photos . tu copies colles cette ligne <li data-target="#carousel-example-generic" data-slide-to="XXXX"></li>
+				et tu remplaces XXXX par un entier qui incremente le dernier présent
+				Si tu supprimes: tu supprimes une ligne entiére et toujours celle avec le numéro le plus élevé
+				Ne jamais supprimer <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				-->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+				</ol>
+				
+				<!-- 
+					Si tu rajoutes des photos: tu copies colles ces lignes avant le </div> 				
+					<div class="item">
+						<img src="pics/Accueil/nomdetaphoto.extensiondufichier">
+					</div>
+					N'oublie pas de remplacer le nomdetaphoto et extensiondufichier. 
+					Si tu supprimes: il faut chercher par rapport à quelle image tu veux supprimer. 
+					Dans tous les cas, tu dois toujours avoir le premier <div class= de la liste qui est <div class="item active">
+					title = c'est le texte qui s'affiche lorsque tu laisses la souris sur une image 
+					h1 = c'est le gros titre de l'image
+					<p> c'est le petit descriptif en dessous
+				-->
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="pics/Accueil/beauval_maitredesairs.jpg" alt="Beauval Maitres des Airs" title="Réalisation des musiques du ZooParc de Beauval - Les Maitres des airs">
+						<div class="carousel-caption">
+							<h1>Zoo de Beauval</h1>
+							<p>Réalisation des musiques du ZooParc de Beauval - Les Maitres des airs</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="pics/Accueil/marinelard_orques.jpg" alt="Marineland saut d'orques" title="Réalisations des musiques du Parc Marineland">
+						<div class="carousel-caption">
+							<h1>Parc Marineland</h1>
+							<p>Réalisation des musiques du Parc aquatique Marineland</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="pics/Accueil/orchestral_epicadventure_tour.jpg" alt="Epic Adventour Cd avec la tour" title="Orchestral Epic Adventure - Nouvelles parutions aux editions Justement Music">
+						<div class="carousel-caption">
+							<h1>Orchestral Epic Adventure</h1>
+							<p>Nouvelles parutions aux editions Justement Music</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="pics/Accueil/orchestre.jpg" alt="orchestre" title="Chef invité du Tainan Symphonic Band" >
+						<div class="carousel-caption">
+							<h1>Tainan Symphonic Band</h1>
+							<p>Chef invité du Tainan Symphonic Band (Théatre de Taïnan - Taïwan)</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="pics/Accueil/oscar.jpg" alt="oscar" title="Mr Hublot remporte l'Oscar 2014 du meilleur film d'animation">
+						<div class="carousel-caption">
+							<h1>Oscar!</h1>
+							<p>Mr Hublot remporte l'Oscar 2014 du meilleur film d'animation</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 
+					Controle du Carousel: ne pas y toucher
+				-->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+					</a>
+			</div>	
+		</div>
+				
+		<!-- ********************************************* Barre horizontale bleue sous le carousel ********************************************* -->
+		<hr>
+
+		<!-- ********************************************* Diverses sections de l'accueil ********************************************* -->
+		<div class="container">
+				<div class="row">
+					<div class="col-sm-5">
+		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Creations à venir $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+						<h2 class="h2_accueil">Creations à venir</h2>
+						<!-- Tableau -->
+						<table class="table" id="table_accueil">
+							<!-- 
+								Comment ca marche: 
+								- thead c'est la ligne qui est composée des gros titres
+								- tbody ce sont les sous lignes du tableau
+								- tr c'est pour une nouvelle ligne (r = row)
+								- th dans thead ou td dans le tbody c'est pour une nouvelle colonne (en réalité c'est une case mais ca revient au meme)
+
+								Si tu veux rajouter une colonne: il va falloir avoir 4 th (pour le thead) ou 4 td (pour le tbody) dans chaque tr
+								Si tu veux rajouter une ligne: copie ca: 
+								<tr>
+									<td> Case de gauche </td>
+									<td> Case du milieu </td>
+									<td> Case de droite </td>
+								</tr>
+							-->
+							
+							<thead>
+								<tr bgcolor="#bcd1f2">
+									<th>Date</th>
+									<th>Evenement</th>
+									<th>Lieu</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>24 et 25 Juin</td>
+									<td>Créations de <i>Un An</i>, <i>Apertura</i> et <i>Tubae Sonitus</i>  par différents ensembles de la région du Val Lamartien</td>
+									<td>Abbaye de Cluny</td>
+								</tr>
+								<tr>
+									<td>Samedi 8 Juillet</td>
+									<td>Création de <i>Terra Delectat</i> par la Philarmonie de Villelaure</td>
+									<td>Centre du village de Villelaure</td>
+								</tr>
+								<tr>
+									<td>Dimanche 9 Juillet</td>
+									<td>Création de <i>Carmen à Sax</i> par le Taïnan Symphonic Band</td>
+									<td>Théatre de Taïnan (Taïwan)</td>
+								</tr>
+								<tr>
+									<td>Mercredi 26 Juillet</td>
+									<td>Concert : <i>A l'Opéra</i> dans le cadre du festival Cuivres en Dombes, oeuvres arrangées par François Rousselot</td>
+									<td>Chanoz-Chatenay</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				<hr class="hr_accueil">
+
+		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ L'actualité $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+					
+		<!-- 
+			Pour rajouter un élément: tu fais <li> Contenu </li>
+			Pour rajouter un lien tu fais <li><a href="tonlien" target="_blank"> Contenu </a></li>
+		-->
+					<div class="col-sm-5">
+						<h2 class="h2_accueil">L'actualité </h2>
+						<ol class="ol_accueil">
+							<li>Réalisation des musiques du conte de Noël 2017 de l'Association Val Grangent</li>
+							<li>Réalisation des musiques (Spectacles et Ambiances sonores) du Parc Marineland</li>
+							<li> Réalisation de trois albums aux éditions Justement Music (disponible sur les plateformes de téléchargement légal) : </li>
+							<!-- Ca c'est une sous liste -->
+								<ul>
+									<li>Pizzicatis (en collaboration avec d'autres compositeurs)</li>
+									<li>Arpeggio et Ostina (en collaboration avec d'autres compositeurs)</li>
+									<li><a href="https://www.amazon.fr/Orchestral-Adventure-Fran%C3%A7ois-Rousselot/dp/B01JPG3OZC/ref=sr_1_3?s=dmusic&ie=UTF8&qid=1470388820&sr=1-3-mp3-albums-bar-strip-0&keywords=francois+rousselot" target="_blank">Orchestral Epic Adventure</a></li>
+								</ul>
+							<li>Chef Invité du Taïnan Symphonic Band (Taïwan)</li>
+							<li>Mr Hublot (Musique F. Rousselot) a remporté l'Oscar 2014 du meilleur Court-métrage d'animation.</li>
+							<li><a href="https://www.edrmartin.com/fr/bio-francois-rousselot-8898/" target="_blank">Parution d'une nouvelle partition aux éditions Robert Martin : Fat version Orchestre Junior</a></li>
+							<li>Réalisation des arrangements du concert "<i>à l'Opéra</i>" pour le festival Cuivres en Dombes.</li>
+						</ol>
+					</div>
+				<hr class="hr_accueil">
+
+		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Me suivre $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+				<!-- 
+					Tu n'as rien à toucher ici
+				-->
+					<div class="col-sm-2">
+						<h2 class="h2_accueil">Me suivre </h2>
+						<ul class="list-unstyled" id="mesuivre">
+							<li><a href="https://www.facebook.com/FrancoisRousselotCompositeur" target="_blank"><img src="./logo/Accueil/facebook.png" alt="facebook" title="facebook"></a></li>
+							<li><a href="mailto:rousselot.francois@gmail.com"><img src="./logo/Accueil/email.png" alt="email" title="email"></a></li>
+							<li><a href="https://soundcloud.com/user1684311" target="_blank"><img src="./logo/Accueil/soundcloud.png" alt="soundcloud" title="soundcloud"></a></li>
+						</ul>
+					</div>
+				</div>
+				<hr class="hr_accueil">
+		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ A voir $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+				<!-- 
+					Tu n'as rien à toucher ici
+				-->
+				<div class="row">
+					<div class="col-sm-6">
+						<h2 class="h2_accueil">A voir </h2>
+						<iframe class="video_accueil" width="560" height="315" src="https://www.youtube.com/embed/8nc-lmer_TQ" frameborder="0" allowfullscreen></iframe>
+						<blockquote>Publicité "Long Live New York" de Laurent Witz. <br>
+								Agence Y&amp;R New York. <br>
+								Publicité sur le don d'Organes pour l'état de New York.<br>
+								Musique : François Rousselot - Macedonia Radio Symphonic Orchestra - Mixage Marc Gueroult
+						</blockquote>
+					</div>
+				<hr class="hr_accueil">
+
+		<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ A ecouter $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+				<!-- 
+					Tu n'as rien à toucher ici
+				-->	
+					<div class="col-sm-6">
+						<h2 class="h2_accueil">A écouter </h2>
+						<iframe width="90%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2652091&amp;color=%23ff5500&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+					</div>
+				</div>
+		</div>
+	</body>
+</html>

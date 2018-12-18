@@ -1,0 +1,479 @@
+/* ******************************************CSS valable pour l'ensemble des pages*********************************************  */
+/* ******************************************CSS valable pour l'ensemble des pages*********************************************  */
+/* ******************************************CSS valable pour l'ensemble des pages*********************************************  */
+
+
+
+/* ********************************************* CSS relatif à la page d'accueil *********************************************  */
+/* ********************************************* CSS relatif à la page d'accueil *********************************************  */
+/* ********************************************* CSS relatif à la page d'accueil *********************************************  */
+
+/*--------------- Fond bleu de l'écran d'accueil avec l'écriture Francois Rousselot Compositeur ----------*/
+.top{
+    /**background-color: rgb(71, 71, 189);*/
+    background-image: url("../pics/Banniere.jpg");
+    background-size: cover; 
+    background-position: center; /* Center the image */
+    width:100%;
+    text-align:center; 
+    color:white; 
+    padding-top: 30px; 
+    font-family: 'Great Vibes', cursive;
+    font-size:50px;
+    /*border:solid 2px rgb(54, 20, 177); */
+    border-top: none; 
+    border-right: none; 
+    border-left: none; 
+}
+
+@media (min-width: 671px) {
+    .top{
+        height:250px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 670px) {
+    .top{
+        height:175px;
+    }
+}
+
+@media (min-width: 330px) and (max-width: 449px) {
+    .top{
+        height:125px;
+    }
+}
+
+@media (max-width: 330px) {
+    .top{
+        height:100px;
+    }
+}
+
+/*.top h1{
+    margin-left:10px;
+    margin-right:10px; 
+}
+
+.top h2{
+    margin-left:10px;
+    margin-right:10px; 
+}*/
+
+/*-------------------------------------------- Menu de navigation--------------------------------------------*/
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+/* ------------------------------------ Configuration du carousel-----------------------------------------  */
+@media only screen and (min-width:800px){
+    .carousel-inner img{
+        max-height:340px; 
+        margin:auto; 
+        }
+}
+
+@media only screen and (min-width:501px) and (max-width:799px){
+    .carousel-inner img{
+        max-height:240px; 
+        margin:auto; 
+        }
+    }
+
+@media only screen and (max-width:500px){
+    .carousel-inner img{
+        max-height:165px; 
+        margin:auto; 
+        }
+    }
+
+.carousel-inner {
+    text-align:center; 
+}
+
+.carousel-caption h1{
+    font-size:20px; 
+}
+
+.carousel-inner img{
+    position: relative;
+    left: auto;
+    right: auto;
+    top:10px;
+}
+
+.carousel-caption {
+    opacity: 0.8; 
+    color:black; 
+    position: relative;
+    left: auto;
+    right: auto;
+    margin-right:10px;
+    margin-left:10px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    margin-left:2px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #5346ca;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    width: 10px;
+    margin-left:2px;
+    height: 10px;
+    margin: 10px;
+    background-color: #8f8faf;
+}
+
+/* ------------------------------------ Concerne tous les titres de section -----------------------------------------  */
+.h2_accueil{
+    color: rgb(99, 99, 163); 
+}
+
+/* ------------------------------------ Zone : créations à venir -----------------------------------------  */
+/* Rien de particulier */
+
+/* ------------------------------------ Zone : L'actualité -----------------------------------------  */
+.ol_accueil{
+    list-style-type: disc;
+}
+
+/* ------------------------------------ Zone : Me suivre -----------------------------------------  */
+@media only screen and (min-width:400px){
+    #mesuivre img{
+        width:95px;
+        padding-top:30px;
+    }
+}
+
+@media only screen and (max-width:399px){
+    #mesuivre img{
+        width:65px;
+        padding-top:30px;
+    }
+}
+
+#mesuivre{
+    text-align:center; 
+}
+
+@media only screen and (min-width:400px) and (max-width:767px){
+    #mesuivre li{
+        display:inline;
+        list-style-type: none; 
+        padding-right:20px; 
+    }
+}
+
+@media only screen and (max-width:399px){
+    #mesuivre li{
+        display:inline;
+        list-style-type: none; 
+        padding-right:10px; 
+    }
+}
+
+@media only screen and (min-width:768px){
+    #mesuivre li{
+        display:block; 
+    }
+}
+
+/* ------------------------------------ Zone : A voir -----------------------------------------  */
+.video_accueil{
+    width:90%; 
+}
+
+/* ------------------------------------ Zone : A ecouter -----------------------------------------  */
+.son_accueil{
+    width:90%; 
+}
+
+/* ------------------------------------ Trait horizontal ------------------------------------------------  */
+hr{
+    margin-top:30px;
+    width: 50%;
+    height: 1.5px;
+    background-color: rgb(54, 35, 224);
+    border: none; /*on supprime le style par défaut*/
+  }
+
+@media only screen and (max-width:767px){
+    .hr_accueil{
+        margin-top:30px;
+        width: 50%;
+        height: 1.5px;
+        background-color: rgb(54, 35, 224);
+        border: none; /*on supprime le style par défaut*/
+    }
+}
+
+@media only screen and (min-width:768px){
+    .hr_accueil{
+        display: none; 
+    }
+}
+
+/* ********************************************* CSS relatif à la page de biographie *********************************************  */
+/* ********************************************* CSS relatif à la page de biographie *********************************************  */
+/* ********************************************* CSS relatif à la page de biographie *********************************************  */
+
+/* ------------------------------------  Logo pdf ------------------------------------ */
+.pdf{
+    width:100px;
+}
+
+#pdf{
+    text-align: center; 
+}
+
+/* ------------------------------------  Special liste en definition: ------------------------------------ */
+@media (min-width: 768px) {
+    #biographie .dl-horizontal dt {
+        width:240px;
+        white-space: normal;
+        margin-bottom: 5px;
+        text-align:left; 
+    }
+    #biographie .dl-horizontal dd {
+        margin-left:260px;
+        text-align:left;
+    }
+}
+
+/* ------------------------------------  Les titres ------------------------------------ */
+.h2_biographie{
+    color:rgb(50, 50, 173);
+    text-align:center; 
+}
+
+.h3_biographie{
+    color:rgb(106, 106, 209);
+    margin-left:10px;
+}
+
+/* ********************************************* CSS relatif à la page A VOIR*********************************************  */
+/* ********************************************* CSS relatif à la page A VOIR*********************************************  */
+/* ********************************************* CSS relatif à la page A VOIR*********************************************  */
+
+/* ------------------------------------  Liste ------------------------------------ */
+.ol_voir{
+    list-style-type:square;
+    padding-top:10px;
+}
+
+/* ------------------------------------  Videos------------------------------------ */
+#a_voir iframe{
+    width:90%; 
+    height:auto; 
+}
+
+#a_voir .col-sm-4{
+    padding-top:40px;
+}
+
+/* ********************************************* CSS relatif à la page CATALOGUE *********************************************  */
+/* ********************************************* CSS relatif à la page CATALOGUE *********************************************  */
+/* ********************************************* CSS relatif à la page CATALOGUE *********************************************  */
+
+/* ------------------------------------  Tableau version XS------------------------------------ */
+#catalogue_table{
+    width:90%;  
+    margin:auto; 
+}
+
+/* ------------------------------------  Liens centres en XS------------------------------------ */
+#catalogue_xs a{
+    text-align: center;
+}
+
+/* ------------------------------------  Special liste en definition: ------------------------------------ */
+@media (max-width: 767px) {
+    #catalogue_xs .dl-horizontal dt {
+        width:120px;
+        white-space: normal;
+        margin-bottom: 5px;
+        text-align:left; 
+    }
+    #catalogue_xs .dl-horizontal dd {
+        margin-left:50px;
+        text-align:left;
+    }
+}
+
+/* ------------------------------------  Videos------------------------------------ */
+#catalogue_xs iframe{
+    width:90%; 
+    height:auto; 
+}
+
+/* ********************************************* CSS relatif à la page CONTACT *********************************************  */
+/* ********************************************* CSS relatif à la page CONTACT *********************************************  */
+/* ********************************************* CSS relatif à la page CONTACT *********************************************  */
+
+/* ------------------------------------  Mise en forme du formulaire------------------------------------ */
+#contact p{
+	margin:0 0 25px;
+    line-height:1.6em;
+}
+
+#contact a:hover,a:focus{
+	text-decoration:none;
+}
+
+#contact{
+	padding-bottom:80px;
+}
+
+#contact textarea.form-control{
+    height:100px;
+}
+
+#contact textarea {
+    resize: none;
+}
+
+
+/* ------------------------------------  Mise en forme du reseau social ------------------------------------ */
+@media (max-width: 399px) {
+    #contact img{
+        width:40px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+    #contact img{
+        width:70px;
+    }
+}
+
+@media (min-width: 768px) {
+    #contact img{
+        width:100px;
+    }
+}
+
+/* ********************************************* CSS relatif à la page DISCOGRAPHIE *********************************************  */
+/* ********************************************* CSS relatif à la page DISCOGRAPHIE *********************************************  */
+/* ********************************************* CSS relatif à la page DISCOGRAPHIE *********************************************  */
+
+/* ------------------------------------  Mise en forme des strongs------------------------------------ */
+#discographie strong{
+    color:rgb(29, 29, 161); 
+}
+
+/* ------------------------------------  Message en diagonale sur image------------------------------------ */
+
+ .texteimage{ 
+     /* height: 50%;
+    width: 50%; 
+     position: relative;
+    overflow: hidden; */
+    text-align:center; 
+  }
+
+@media (max-width: 767px) {
+#discographie img {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 400px) {
+    #discographie img {
+        width: 80%;
+      }
+    }
+
+.texteimage p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    pointer-events: none;
+    /* -webkit-transform: rotate(-45deg); */
+    /* -moz-transform: rotate(-45deg); */
+  }
+
+
+  /* ------------------------------------  Ecart entre les lignes------------------------------------ */
+#discographie .row{
+    margin-top:30px;
+}
+
+/* ********************************************* CSS relatif à la page repertoire abordé *********************************************  */
+/* ********************************************* CSS relatif à la page repertoire abordé *********************************************  */
+/* ********************************************* CSS relatif à la page repertoire abordé *********************************************  */
+
+/* ------------------------------------  Titres ------------------------------------ */
+#repertoire h2{
+    color: rgb(99, 99, 163); 
+    font-size:1.3em; 
+}
+
+/* ********************************************* CSS relatif à la pagevotre projet *********************************************  */
+/* ********************************************* CSS relatif à la pagevotre projet *********************************************  */
+/* ********************************************* CSS relatif à la pagevotre projet *********************************************  */
+
+/* ------------------------------------  Image ------------------------------------ */
+#votreprojet img{
+    width:90%; 
+}
+
+#votreprojet h2{
+    color: rgb(99, 99, 163); 
+    font-size:1.3em; 
+}
+
+#votreprojet li{
+    list-style-type: disc; 
+}
+
+#votreprojet .col-sm-12{
+    padding-right: 30px; 
+    padding-left:30px; 
+}
+
+/* ********************************************* CSS relatif à la page ecouter *********************************************  */
+/* ********************************************* CSS relatif à la page ecouter *********************************************  */
+/* ********************************************* CSS relatif à la page ecouter *********************************************  */
+
+/* ------------------------------------  Image ------------------------------------ */
+#ecouter img{
+    width:90%; 
+    margin-top: 10px;
+}
+
+#ecouterconcert h2{
+    color: rgb(99, 99, 163); 
+    font-size:1.3em; 
+}
+
+#ecouterconcert  iframe{
+    width:90%;
+}
+
+#ecouterfilmspectacle h2{
+    color: rgb(99, 99, 163); 
+    font-size:1.3em; 
+}
+
+#ecouter .linkTitle{
+    font-size:1.3em; 
+}
+
