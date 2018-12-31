@@ -9,56 +9,46 @@
 /* ********************************************* CSS relatif à la page d'accueil *********************************************  */
 
 /*--------------- Fond bleu de l'écran d'accueil avec l'écriture Francois Rousselot Compositeur ----------*/
-.top{
-    /**background-color: rgb(71, 71, 189);*/
-    background-image: url("../pics/Banniere.jpg");
+/**.top{
+    background-color: rgb(71, 71, 189);
+    /**background-image: url("../pics/Banniere.jpg");
     background-size: cover; 
-    background-position: center; /* Center the image */
+    background-position: center; /* Center the image *//**
     width:100%;
     text-align:center; 
     color:white; 
     padding-top: 30px; 
     font-family: 'Great Vibes', cursive;
     font-size:50px;
-    /*border:solid 2px rgb(54, 20, 177); */
+    /*border:solid 2px rgb(54, 20, 177); 
     border-top: none; 
     border-right: none; 
     border-left: none; 
-}
+}*/
 
 @media (min-width: 671px) {
-    .top{
-        height:250px;
+    .top img{
+        width:75%;
     }
 }
 
 @media (min-width: 450px) and (max-width: 670px) {
-    .top{
-        height:175px;
+    .top img{
+        width:85%;
     }
 }
 
 @media (min-width: 330px) and (max-width: 449px) {
-    .top{
-        height:125px;
+    .top img{
+        width:95%;
     }
 }
 
 @media (max-width: 330px) {
-    .top{
-        height:100px;
+    .top img{
+        width:100%;
     }
 }
-
-/*.top h1{
-    margin-left:10px;
-    margin-right:10px; 
-}
-
-.top h2{
-    margin-left:10px;
-    margin-right:10px; 
-}*/
 
 /*-------------------------------------------- Menu de navigation--------------------------------------------*/
 
@@ -68,9 +58,14 @@
     vertical-align: top;
   }
   
-  .navbar .navbar-collapse {
-    text-align: center;
-  }
+.navbar .navbar-collapse {
+   text-align: center;
+}
+
+.navbar-default{
+    background-color:white; 
+    border: none; 
+}
 
 /* ------------------------------------ Configuration du carousel-----------------------------------------  */
 @media only screen and (min-width:800px){
